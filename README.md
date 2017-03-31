@@ -4,11 +4,11 @@
 * No browsersync
 
 ### Usage
-Compile working files => `npm run dev`
+Compile assets when file changes are made => `npm run watch`
 
-Watch command => `npm run watch`
+Compile and optimize files in your assets directory => `npm run dev`
 
-Compile for production => `npm run production`
+Compile assets for production => `npm run production`
 
 > Working/default branch: `laravel-mix`
 
