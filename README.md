@@ -1,11 +1,13 @@
-##Different from Sage 9:
+## Different from Sage 9:
 * Laravel Mix as front-end for webpack
 * Vuejs
 * No browsersync
 
-###Usage
+### Usage
 Compile working files => `npm run dev`
+
 Watch command => `npm run watch`
+
 Compile for production => `npm run production`
 
 > Working/default branch: `laravel-mix`
