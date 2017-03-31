@@ -24,11 +24,11 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new BrowserSyncPlugin({
-      target,
-      proxyUrl: config.proxyUrl,
-      watch: config.watch,
-      delay: 500,
-    }),
+    // new BrowserSyncPlugin({
+    //   target,
+    //   proxyUrl: config.proxyUrl,
+    //   watch: config.watch,
+    //   delay: 500,
+    // }),
   ],
 };

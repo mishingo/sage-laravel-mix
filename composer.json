@@ -21,11 +21,13 @@
   ],
   "support": {
     "issues": "https://github.com/roots/sage/issues",
-    "forum": "https://discourse.roots.io/"
+    "forum": "https://discourse.roots.io/",
+    "forked-issues": "https://github.com/robbinfellow/sage/issues"
   },
   "autoload": {
     "psr-4": {
-      "Roots\\Sage\\": "src/lib/Sage/"
+      "Roots\\Sage\\": "src/lib/Sage/",
+      "robbinfellow\\": "src/lib/robbinfellow"
     }
   },
   "require": {
@@ -43,8 +45,6 @@
     ],
     "post-create-project-cmd": [
         "Roots\\Sage\\PostCreateProject::updateHeaders",
-        "Roots\\Sage\\PostCreateProject::selectFramework",
-        "Roots\\Sage\\PostCreateProject::addFontAwesome",
         "Roots\\Sage\\PostCreateProject::buildOptions"
     ]
   }

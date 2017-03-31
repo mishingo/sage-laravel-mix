@@ -1,3 +1,15 @@
+##Different from Sage 9:
+* Laravel Mix as front-end for webpack
+* Vuejs
+* No browsersync
+
+###Usage
+Compile working files => `npm run dev`
+Watch command => `npm run watch`
+Compile for production => `npm run production`
+
+> Working/default branch: `laravel-mix`
+
 # [Sage](https://roots.io/sage/)
 [![Packagist](https://img.shields.io/packagist/vpre/roots/sage.svg?style=flat-square)](https://packagist.org/packages/roots/sage)
 [![devDependency Status](https://img.shields.io/david/dev/roots/sage.svg?style=flat-square)](https://david-dm.org/roots/sage#info=devDependencies)
