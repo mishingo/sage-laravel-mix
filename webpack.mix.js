@@ -11,7 +11,8 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('assets/scripts/main.js', 'dist/scripts/')
-   .js('assets/scripts/customizer.js', 'dist/scripts/')
-   .sass('assets/styles/main.scss', 'dist/styles/')
-   .copy('assets/images', 'dist/images/', false);
+mix.js('assets/scripts/main.js', 'scripts/')
+   .js('assets/scripts/customizer.js', 'scripts/')
+   .sass('assets/styles/main.scss', 'styles/')
+   .copy('assets/images', 'dist/images/', false)
+   .setPublicPath('dist');
