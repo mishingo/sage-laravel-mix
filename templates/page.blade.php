@@ -1,12 +1,15 @@
 @extends('layouts.base')
 
 @section('content')
+
+  <h4 class="mt-5 mb-3 py-1">Display page using wordpress standards</h4>
+  <hr>
+
   @while(have_posts()) @php(the_post())
-    <h4 class="mt-5 mb-3 py-1">Display page using wordpress standards</h4>
-    <hr>
     @include('partials.page-header')
     @include('partials.content-page')
   @endwhile
+
   @if (has_post_thumbnail())
   	@php 
   		$thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail');
@@ -83,9 +86,5 @@
         <li>{{$name}}</li>
       @endforeach
     </ul>
-
-    <pre>
-      @php (var_dump())
-    </pre>
 
 @endsection

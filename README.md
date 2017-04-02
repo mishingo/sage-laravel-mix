@@ -3,14 +3,18 @@
 * Vuejs
 * No browsersync
 
-### Usage
-Compile assets when file changes are made => `npm run watch`
+### Installation
+    cd themes/sage-laravel-mix
+    composer install
+    npm i
+    npm run dev
 
-Compile and optimize files in your assets directory => `npm run dev`
+### Laravel mix
+`npm run watch` - Watch files
 
-Compile assets for production => `npm run production`
+`npm run dev` - Compile assets
 
-> Working/default branch: `laravel-mix`
+`npm run production` - Compile & minify assets
 
 # [Sage](https://roots.io/sage/)
 [![Packagist](https://img.shields.io/packagist/vpre/roots/sage.svg?style=flat-square)](https://packagist.org/packages/roots/sage)
