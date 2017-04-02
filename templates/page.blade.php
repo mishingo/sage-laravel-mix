@@ -9,10 +9,10 @@
   @endwhile
   @if (has_post_thumbnail())
   	@php 
-  		$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail');
+  		$thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail');
   	@endphp
   	<a href="{{ get_permalink() }}">
-  		<img src="{{ $large_image_url[0] }}">
+  		<img src="{{ $thumbnail_image_url[0] }}">
   	</a>
   @endif
 
@@ -71,5 +71,21 @@
       @content
       <small>@date</small>
     @endquery
+
+    <h4 class="mt-5 mb-3 py-1">Fetch data from controller</h4>
+
+    <hr>
+
+    <h2>{{ $title or 'Not Defined' }}</h2>
+
+    <ul>
+      @foreach($names as $name)
+        <li>{{$name}}</li>
+      @endforeach
+    </ul>
+
+    <pre>
+      @php (var_dump())
+    </pre>
 
 @endsection
