@@ -2,14 +2,14 @@
 <div class="row">
     <div class="col-sm-12 my-3">
         <div class="card">
-            <div class="card-header">Example Component</div>
+            <div class="card-header">
+                {{ title }}
+            </div>
 
-            <div v-if="myVar" class="card-block">
-                I'm an example vue-component!
+            <div class="card-block">
+                {{ body }}
             </div>
-            <div v-else class="card-block">
-                {{msg}}
-            </div>
+
         </div>
     </div>
 </div>
@@ -18,19 +18,14 @@
 <script>
     export default {
         mounted() {
-            this.myExample();
-            console.log('Component mounted.')
+            this.basicFunction();
         },
-        data: function(){
-            return {
-                myVar: false,
-                msg: 'This is an error!'
-            }
-        },
-        // props: ['content'],
+
+        props: ['title', 'body'],
+
         methods: {
-            myExample(){
-               this.myVar = true; 
+            basicFunction(){
+               console.log('Component mounted.');
             }
         }
     }
