@@ -2,6 +2,8 @@
 * Laravel Mix as front-end for webpack
 * Vuejs
 * No browsersync
+* Extended blade directives
+* wp-bootstrap-navwalker by default
 
 ### Installation
     cd themes/sage-laravel-mix

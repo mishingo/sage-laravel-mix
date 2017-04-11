@@ -84,7 +84,11 @@ function asset_path($asset)
 function display_sidebar()
 {
     static $display;
-    isset($display) || $display = apply_filters('sage/display_sidebar', false);
+    isset($display) || $display = in_array(true, [
+      // The sidebar will be displayed if any of the following return true
+      is_single(),
+      is_page_template('templates/template-sidebar.php')
+    ]);
     return $display;
 }
 
