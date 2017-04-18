@@ -64,3 +64,15 @@ add_filter('template_include', function ($template) {
  * Tell WordPress how to find the compiled path of comments.blade.php
  */
 add_filter('comments_template', 'App\\template_path');
+
+/**
+ * Glide configuration
+ */
+add_filter( 'pre_option_upload_url_path', function () {
+    return home_url( '/img' );
+} );
+
+add_filter( 'glide/options', function ($options) {
+    $options['cache'] = WP_CONTENT_DIR . '/uploads/cache/glide';
+    return $options;
+} );

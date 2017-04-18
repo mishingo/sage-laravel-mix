@@ -91,8 +91,8 @@ if ( function_exists( 'add_theme_support' ) ) {
     set_post_thumbnail_size( 150, 150, true ); // default Featured Image dimensions (cropped)
 
     // additional image sizes
-    // use the following parameters width(int), height(int), crop(bool)
-    add_image_size( 'example-size', 780 );
-    add_image_size( 'another-size', 1600, 600 );
+    // No need for this if using the WP Glide Plugin
+    // add_image_size( 'example-size', 780 );
+    // add_image_size( 'another-size', 1600, 600 );
  }
 

@@ -3,13 +3,24 @@
 * Vuejs
 * No browsersync
 * Extended blade directives
+* Prepared with [WP Glide](http://glide.thephpleague.com/)
 * wp-bootstrap-navwalker by default
 
+### (Optional) [WP Glide](http://glide.thephpleague.com/)
+Run the following from your bedrock root:
+```
+$ composer require frozzare/wp-glide
+```
+
+> Don't forget to activate the plugin in your wordpress backend.
+
 ### Installation
-    cd themes/sage-laravel-mix
-    composer install
-    npm i
-    npm run dev
+```
+$ cd themes/sage-laravel-mix
+$ composer install
+$ npm i
+$ npm run dev
+```
 
 ### Laravel mix
 `npm run watch` - Watch files
