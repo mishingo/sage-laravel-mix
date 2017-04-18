@@ -18,4 +18,4 @@ mix.js('assets/scripts/main.js', 'scripts/')
    .options({
       processCssUrls: false
     })
-   .setPublicPath('dist');
+   .setPublicPath('dist').version();
