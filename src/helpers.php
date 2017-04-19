@@ -115,3 +115,7 @@ function title()
     }
     return get_the_title();
 }
+
+add_filter( 'body_class', function( $classes ) {
+    return array_merge( $classes, array( 'global' ) );
+} );

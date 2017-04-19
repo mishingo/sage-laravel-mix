@@ -12,4 +12,16 @@
 	    <img class="img-fluid" src="{{ $image }}">
     @endif
   @endwhile
+  
+	<h4 class="mt-5 mb-3 py-1">Fetch data from controller</h4>
+	<hr>
+
+	<h2>{{ $title or 'Not Defined' }}</h2>
+
+	<ul>
+		@foreach($names as $name)
+			<li>{{$name}}</li>
+		@endforeach
+	</ul>
+
 @endsection

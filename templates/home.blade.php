@@ -9,9 +9,11 @@
 {!! get_search_form(false) !!}
 @endif
 
-@posts
-	@include ('partials.content-'.(get_post_type() !== 'post' ? get_post_type() : get_post_format()))
-@endposts
+@if($latest_posts)
+	@foreach($latest_posts as $post)
+		@include ('partials.content-'.(get_post_type() !== 'post' ? get_post_type() : get_post_format()))
+	@endforeach
+@endif
 
 <example title="Example Component" body="I'm an example vue-component!"></example>
 

@@ -1,15 +1,13 @@
 <header class="banner my-3">
   <div class="container">
 
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded my-3">
 
 	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-
-	  <a class="navbar-brand" href="#">Navbar</a>
+	  
+	  <a class="navbar-brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
 
 	  <div class="collapse navbar-collapse" id="navbar">
 	   @if (has_nav_menu('primary_navigation'))

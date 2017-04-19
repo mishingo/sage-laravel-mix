@@ -55,7 +55,7 @@ array_map(function ($file) use ($sage_error) {
     if (!locate_template($file, true, true)) {
         $sage_error(sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file), 'File not found');
     }
-}, ['helpers', 'setup', 'filters', 'admin', 'controllers', 'custom-movies', 'wp-bootstrap-navwalker']);
+}, ['helpers', 'setup', 'filters', 'admin', 'controller', 'custom-movies', 'wp-bootstrap-navwalker']);
 
 /**
  * Here's what's happening with these hooks:
@@ -90,7 +90,7 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 150, 150, true ); // default Featured Image dimensions (cropped)
 
-    // additional image sizes
+    // Additional image sizes
     // No need for this if using the WP Glide Plugin
     // add_image_size( 'example-size', 780 );
     // add_image_size( 'another-size', 1600, 600 );
