@@ -3,9 +3,9 @@
 namespace App;
 
 /**
- * Home
+ * Latest posts
  */
-function home($data)
+function latest_posts($data)
 {
     // Get posts
     $latest_posts = null;
@@ -41,26 +41,7 @@ function home($data)
     return $data;
 }
 
-add_filter('sage/template/home/data', 'App\\home');
-
-/**
-* Sample test data
-*/
-function sample()
-{
-    $data = [
-        'title' => 'List',
-        'names' => [
-            'Frank',
-            'Bob',
-            'Mary'
-        ]
-    ];
-
-    return $data;
-}
-
-add_filter( 'sage/template/page/data', 'App\\sample' );
+add_filter('sage/template/home/data', 'App\\latest_posts');
 
 /**
 * Data available globally

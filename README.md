@@ -18,16 +18,16 @@ $ composer require frozzare/wp-glide
 ```
 $ cd themes/sage-laravel-mix
 $ composer install
-$ npm i
-$ npm run dev
+$ yarn
+$ yarn run dev / production / watch
 ```
 
 ### Laravel mix
-`npm run watch` - Watch files
+`yarn run watch` - Watch files
 
-`npm run dev` - Compile assets
+`yarn run dev` - Compile assets
 
-`npm run production` - Compile & minify assets
+`yarn run production` - Compile & minify assets
 
 # [Sage](https://roots.io/sage/)
 [![Packagist](https://img.shields.io/packagist/vpre/roots/sage.svg?style=flat-square)](https://packagist.org/packages/roots/sage)
