@@ -11,7 +11,14 @@
 
 @if($latest_posts)
 	@foreach($latest_posts as $post)
-		@include ('partials.content-'.(get_post_type() !== 'post' ? get_post_type() : get_post_format()))
+	<div class="card my-3">
+		<div class="card-header p-3">
+			<h3 class="m-0">{{ $post['title'] }}</h3>
+		</div>
+		<div class="card-body p-3">
+			<p class="m-0">{{ $post['content'] }}</p>
+		</div>
+	</div>
 	@endforeach
 @endif
 

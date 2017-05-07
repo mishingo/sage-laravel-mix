@@ -12,16 +12,11 @@
 	    <img class="img-fluid" src="{{ $image }}">
     @endif
   @endwhile
-  
-	<h4 class="mt-5 mb-3 py-1">Fetch data from controller</h4>
-	<hr>
 
-	<h2>{{ $title or 'Not Defined' }}</h2>
+<blockquote class="blockquote my-3">
+	Glide is a wonderfully easy on-demand image manipulation library written in PHP. Its straightforward API is exposed via HTTP, similar to cloud image processing services like Imgix and Cloudinary. Glide leverages powerful libraries like Intervention Image (for image handling and manipulation) and Flysystem (for file system abstraction).
+</blockquote>
 
-	<ul>
-		@foreach($names as $name)
-			<li>{{$name}}</li>
-		@endforeach
-	</ul>
+<a href="http://glide.thephpleague.com/" class="btn btn-primary">More</a>
 
 @endsection

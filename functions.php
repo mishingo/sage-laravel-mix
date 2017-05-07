@@ -61,7 +61,7 @@ array_map(function ($file) use ($sage_error) {
     'filters',
     'admin',
     'controller',
-    'custom-movies',
+    'custom-post-type',
     'wp-bootstrap-navwalker'
     ]);
 

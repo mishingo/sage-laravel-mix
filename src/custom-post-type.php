@@ -1,21 +1,21 @@
 <?php 
     
-function test_cpt() {
+function my_cpt() {
 
 /**
- * Post Type: movies.
+ * Post Type: My custom post type.
  */
 
 $labels = array(
-    "name" => __( 'movies', 'sage' ),
-    "singular_name" => __( 'movie', 'sage' ),
-    "menu_name" => __( 'Movies', 'sage' ),
+    "name" => __( 'cpts', 'sage' ),
+    "singular_name" => __( 'cpt', 'sage' ),
+    "menu_name" => __( 'CPT', 'sage' ),
 );
 
 $args = array(
-    "label" => __( 'movies', 'sage' ),
+    "label" => __( 'CPT', 'sage' ),
     "labels" => $labels,
-    "description" => "test",
+    "description" => "This is my custom post type",
     "public" => true,
     "publicly_queryable" => true,
     "show_ui" => true,
@@ -27,15 +27,15 @@ $args = array(
     "capability_type" => "post",
     "map_meta_cap" => true,
     "hierarchical" => false,
-    "rewrite" => array( "slug" => "test_post_slug", "with_front" => true ),
+    "rewrite" => array( "slug" => "my_custom_post", "with_front" => true ),
     "query_var" => true,
     "menu_position" => 5,
     "supports" => array( "title", "editor", "excerpt", "thumbnail" ),
 );
 
-register_post_type( "test_post_slug", $args );
+register_post_type( "my_custom_post", $args );
 }
 
-add_action( 'init', 'test_cpt' );
+add_action( 'init', 'my_cpt' );
 
 ?>
