@@ -18,12 +18,6 @@ require('bootstrap');
  */
 
 window.Vue = require('vue');
-/**
- * Uncomment below when compiling to production
- */
-// Vue.config.devtools = false
-// Vue.config.debug = false
-// Vue.config.silent = true
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
