@@ -3,11 +3,16 @@
 // Import npm dependencies
 @import "~bootstrap/scss/bootstrap";
 
+// Common
 @import "common/global";
+
+// Components
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
+
+// Layouts
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
