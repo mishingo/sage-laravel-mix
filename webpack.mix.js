@@ -12,8 +12,16 @@ const { mix } = require('laravel-mix');
  */
 
 mix.setPublicPath('dist')
-   .js('assets/scripts/main.js', 'scripts/')
-   .sass('assets/styles/main.scss', 'styles/')
+   .js('assets/scripts/app.js', 'scripts/')
+   .extract([
+   		'jquery',
+   		'axios',
+   		'babel-polyfill',
+   		'lodash',
+   		'tether',
+   		'vue'
+   	])
+   .sass('assets/styles/app.scss', 'styles/')
    .copy('assets/images', 'dist/images/', false)
    .options({
       processCssUrls: false
