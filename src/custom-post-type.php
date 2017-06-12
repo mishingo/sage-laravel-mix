@@ -3,19 +3,19 @@
 function my_cpt() {
 
 /**
- * Post Type: My custom post type.
+ * Post Type: CPT
  */
 
 $labels = array(
-    "name" => __( 'cpts', 'sage' ),
-    "singular_name" => __( 'cpt', 'sage' ),
-    "menu_name" => __( 'CPT', 'sage' ),
+    "name" => __( 'cpt', 'sage-laravel-mix' ),
+    "singular_name" => __( 'cpt', 'sage-laravel-mix' ),
+    "menu_name" => __( 'CPT', 'sage-laravel-mix' ),
 );
 
 $args = array(
-    "label" => __( 'CPT', 'sage' ),
+    "label" => __( 'CPT', 'sage-laravel-mix' ),
     "labels" => $labels,
-    "description" => "This is my custom post type",
+    "description" => "Custom Post Type",
     "public" => true,
     "publicly_queryable" => true,
     "show_ui" => true,

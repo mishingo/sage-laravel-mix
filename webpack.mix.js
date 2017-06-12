@@ -18,7 +18,7 @@ mix.setPublicPath('dist')
    		'axios',
    		'babel-polyfill',
    		'lodash',
-   		'tether',
+         'tether',
    		'vue'
    	])
    .sass('assets/styles/app.scss', 'styles/')
