@@ -1,16 +1,8 @@
 <template>
 <div class="row">
-    <div class="col-sm-12 my-3">
-        <div class="card">
-            <div class="card-header">
-                {{ title }}
-            </div>
-
-            <div class="card-block">
-                {{ body }}
-            </div>
-
-        </div>
+    <div class="col-sm-8 col-sm-offset-2">
+        <h2>{{ title }}</h2>
+        {{ body }}
     </div>
 </div>
 </template>

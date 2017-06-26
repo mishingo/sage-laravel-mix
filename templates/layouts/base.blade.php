@@ -4,7 +4,7 @@
 <body @php(body_class())>
 @php(do_action('get_header'))
 @include('partials.navbar')
-    <div id="app" class="wrap container" role="document">
+    <div id="app" class="wrap" role="document">
         <div class="content">
             <main class="main">
                 @yield('content')

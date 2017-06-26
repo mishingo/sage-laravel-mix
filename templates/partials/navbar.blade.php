@@ -1,21 +1,25 @@
-<header class="banner my-3">
-  <div class="container">
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
 
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded my-3">
+		<div class="navbar-header">
+			<button class="collapsed navbar-toggle"
+				type="button" 
+				data-toggle="collapse" 
+				data-target="#sage-navbar" 
+				aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
+		</div>
 
-	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  
-	  <a class="navbar-brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
+		<div class="collapse navbar-collapse" id="sage-navbar">
+			@if (has_nav_menu('primary_navigation'))
+				{!! wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']) !!}
+			@endif
+		</div>
 
-	  <div class="collapse navbar-collapse" id="navbar">
-	   @if (has_nav_menu('primary_navigation'))
-        	{!! wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav navbar-right']) !!}
-      	@endif
-	  </div>
-
-	</nav>
-
-  </div>
-</header>
+	</div>
+</nav>
