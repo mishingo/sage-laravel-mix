@@ -22,7 +22,6 @@ mix.setPublicPath('dist')
    		'vue'
    	])
    .sass('assets/styles/app.scss', 'styles/')
-   .copy('assets/images', 'dist/images/', false)
    .options({
       processCssUrls: false
     })
