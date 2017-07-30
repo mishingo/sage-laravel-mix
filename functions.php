@@ -60,7 +60,6 @@ array_map(function ($file) use ($sage_error) {
     'setup',
     'filters',
     'admin',
-    'controller',
     'custom-post-type',
     'wp-bootstrap-navwalker'
     ]);
@@ -103,4 +102,11 @@ if ( function_exists( 'add_theme_support' ) ) {
     // add_image_size( 'example-size', 780 );
     // add_image_size( 'another-size', 1600, 600 );
  }
+
+/**
+* Modify controller path
+*/
+add_filter('sober/controller/path', function () {
+    return get_stylesheet_directory() . '/controller';
+});
 

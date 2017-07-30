@@ -2,7 +2,7 @@
   Template Name: Custom Template
 --}}
 
-@extends('layouts.base')
+@extends('layouts.app')
 
 @section('content')
 

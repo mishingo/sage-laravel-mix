@@ -1,3 +1,9 @@
+### sage-laravel-mix 1.0.0 July 30, 2017
+* Add soberwp/controller package ([repo](https://github.com/soberwp/controller))
+* Remove extended blade directives
+* Rename base.blade.php > app.blade.php
+* Update readme
+
 ### HEAD
 * Add option to configure build settings ([#1822](https://github.com/roots/sage/pull/1822))
 * Add support for HTML injection ([#1817](https://github.com/roots/sage/pull/1817))
